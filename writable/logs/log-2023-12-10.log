@@ -1,0 +1,153 @@
+ERROR - 2023-12-10 15:19:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'E-LibraryXpert', 3306, '', 0)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\CI4-Library-Management-System\app\Controllers\Home.php(47): CodeIgniter\BaseModel->paginate(20, 'books')
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->book()
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CI4-Library-Management-System\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 C:\laragon\www\CI4-Library-Management-System\app\Controllers\Home.php(47): CodeIgniter\BaseModel->paginate(20, 'books')
+#6 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->book()
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\CI4-Library-Management-System\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-10 15:19:33 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `books`
+LEFT JOIN `book_stock` ON `books`.`id` = `book_stock`.`book_id`
+LEFT JOIN `categories` ON `books`.`category_id` = `categories`.`id`
+LEFT JOIN `racks` ON `books`.`rack_id` = `racks`.`id`
+WHERE `books`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(47): CodeIgniter\BaseModel->paginate(20, 'books')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->book()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\CI4-Library-Management-System\\public\\index.php')
+ERROR - 2023-12-10 15:19:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', 'root', 'E-LibraryXpert', 3306, '', 0)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#6 C:\laragon\www\CI4-Library-Management-System\app\Controllers\Home.php(47): CodeIgniter\BaseModel->paginate(20, 'books')
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->book()
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\CI4-Library-Management-System\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+#5 C:\laragon\www\CI4-Library-Management-System\app\Controllers\Home.php(47): CodeIgniter\BaseModel->paginate(20, 'books')
+#6 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(942): App\Controllers\Home->book()
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\CI4-Library-Management-System\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-12-10 15:19:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `books`
+LEFT JOIN `book_stock` ON `books`.`id` = `book_stock`.`book_id`
+LEFT JOIN `categories` ON `books`.`category_id` = `categories`.`id`
+LEFT JOIN `racks` ON `books`.`rack_id` = `racks`.`id`
+WHERE `books`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1203): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Home.php(47): CodeIgniter\BaseModel->paginate(20, 'books')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->book()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\CI4-Library-Management-System\\public\\index.php')
+ERROR - 2023-12-10 15:42:14 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\CIUnitTestCase.php(250): ExampleDatabaseTest->setUpDatabase()
+#5 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestCase.php(1211): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestCase.php(968): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 C:\laragon\www\CI4-Library-Management-System\vendor\bin\phpunit(122): include('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2023-12-10 15:42:15 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\CIUnitTestCase.php(250): ExampleDatabaseTest->setUpDatabase()
+#5 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestCase.php(1211): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestCase.php(968): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 C:\laragon\www\CI4-Library-Management-System\vendor\bin\phpunit(122): include('C:\\laragon\\www\\...')
+#16 {main}
+ERROR - 2023-12-10 15:42:34 --> Error connecting to the database: Error: Class "SQLite3" not found in C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php:89
+Stack trace:
+#0 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\SQLite3\Connection->connect(false)
+#1 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Database\SQLite3\Connection.php(59): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\DatabaseTestTrait.php(74): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\DatabaseTestTrait.php(54): ExampleDatabaseTest->loadDependencies()
+#4 C:\laragon\www\CI4-Library-Management-System\vendor\codeigniter4\framework\system\Test\CIUnitTestCase.php(250): ExampleDatabaseTest->setUpDatabase()
+#5 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestCase.php(1211): CodeIgniter\Test\CIUnitTestCase->setUp()
+#6 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestResult.php(728): PHPUnit\Framework\TestCase->runBare()
+#7 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestCase.php(968): PHPUnit\Framework\TestResult->run(Object(ExampleDatabaseTest))
+#8 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#9 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#10 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\Framework\TestSuite.php(684): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#11 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(651): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#12 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\Command.php(144): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\Framework\TestSuite), Array, Array, true)
+#13 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\src\TextUI\Command.php(97): PHPUnit\TextUI\Command->run(Array, true)
+#14 C:\laragon\www\CI4-Library-Management-System\vendor\phpunit\phpunit\phpunit(107): PHPUnit\TextUI\Command::main()
+#15 C:\laragon\www\CI4-Library-Management-System\vendor\bin\phpunit(122): include('C:\\laragon\\www\\...')
+#16 {main}
