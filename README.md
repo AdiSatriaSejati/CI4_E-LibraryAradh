@@ -2,9 +2,7 @@
 
 # E-LibraryAradh
 
-[![PHP Composer](https://github.com/ikhsan3adi/sistem-perpustakaan-qr-code/actions/workflows/php.yml/badge.svg)](https://github.com/ikhsan3adi/sistem-perpustakaan-qr-code/actions/workflows/php.yml)
-
-![Preview](https://ik.imagekit.io/AdiSatriaSejati/Home.png?updatedAt=1702621796473)
+![Preview](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/raw/main/screenshots/Home.gif)
 
 ## Fitur
 
