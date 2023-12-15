@@ -139,7 +139,7 @@ amountFinesPerDay = 1000
     ```bash
     cp .env.example .env
     ```
-5. Buat Database di http://localhost/phpmyadmin/
+5. ![Buat Database di](http://localhost/phpmyadmin/)
    ```bash
    E-LibraryXpert
    ```
