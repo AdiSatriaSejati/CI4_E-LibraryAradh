@@ -24,82 +24,72 @@
 - [Endroid QR Code Generator](https://github.com/endroid/qr-code)
 - [Mebjas Html5-QRCode Scanner](https://github.com/mebjas/html5-qrcode)
 
-## Cara Penggunaan
+## Persyaratan
 
-### Persyaratan
+- [Composer >= 2.6.3](https://getcomposer.org/)
+- [Laragon 6.0.0](https://laragon.org/download/index.html) / [XAMPP](https://www.apachefriends.org/download.html)
+- MySQL >= 5.7.39
+- PHP >= 8.1.10
+- Kamera/Webcam untuk menjalankan qr scanner.
 
-- [Composer](https://getcomposer.org/).
-- PHP dan MySQL atau [XAMPP](https://www.apachefriends.org/download.html) versi 8.1+ dengan mengaktifkan extension `-intl` dan `-gd`.
-- Pastikan perangkat memiliki kamera/webcam untuk menjalankan qr scanner. Bisa juga menggunakan kamera HP dengan bantuan software DroidCam.
+## Instalasi
 
-### Instalasi
+1. Kloning repositori:
+    ```bash
+    git clone https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh.git
+    ```
+2. Masuk ke direktori proyek:
+    ```bash
+    cd I4_E-LibraryAradh
+    ```
+3. Instal dependencies menggunakan Composer:
+    ```bash
+    composer install
+    ```
+4. Salin file `.env.example` menjadi `.env`:
+    ```bash
+    cp .env.example .env
+    ```
+5. Buat Database di http://localhost/phpmyadmin/
+   ```bash
+   E-LibraryXpert
+   ```
+6. Menjalankan Migrasi Database:
+    ```bash
+    php spark migrate --all
+    ```
+7. Menambahkan Data ke Database dengan SuperAdminSeeder:
+    ```bash
+    php spark db:seed SuperAdminSeeder
+    ```
+8. Penambahan Data Tambahan:
+    ```bash
+    php spark db:seed Seeder
+    ```
+9. Jalankan Website:
+    ```bash
+    php spark serve
+    ```
+10. http://localhost:8080
 
-- Unduh dan impor kode proyek ini ke dalam direktori proyek anda (htdocs).
-- Penting ⚠️. Ubah nama file `.env.example` menjadi `.env`
-- (Opsional) Konfigurasi file `.env` untuk mengatur parameter seperti koneksi database dan pengaturan lainnya sesuai dengan lingkungan pengembangan Anda.
-- Ubah denda per hari di file `.env`
-
-```
+11. Akun :
+    - Email Address
+      ```bash
+      Kelompok-2@bsi.ac.id
+      ```
+    - Password
+      ```bash
+      12345678
+      ```
+      
 # in rupiah
 amountFinesPerDay = 1000
-```
-
-- Penting ⚠️. Install dependencies yang diperlukan dengan cara menjalankan perintah berikut di terminal:
-
-```shell
-composer install
-```
-
-- Buat database `db_book_library` di phpMyAdmin / mysql
-- Penting ⚠️. Jalankan migrasi database untuk membuat struktur tabel yang diperlukan. Ketikkan perintah berikut di terminal:
-
-```shell
-php spark migrate --all
-```
-
-- Penting ⚠️. Karena belum memiliki akun admin, untuk mengakses halaman admin, anda memerlukan user/akun dengan level `superadmin`. Jalankan perintah berikut untuk membuat akun `superadmin`:
-
-```shell
-php spark db:seed SuperAdminSeeder
-```
-
-- (Opsional) Isi database dengan data dummy / seeder.
-
-```shell
-php spark db:seed Seeder # semua seeder
-php spark db:seed BookSeeder # buku
-php spark db:seed MemberSeeder # anggota
-php spark db:seed LoanSeeder # peminjaman, pengembalian & denda
-```
-
-- Jalankan website
-
-```shell
-php spark serve
-```
-
-- Buka http://localhost:8080
-
-- Login dengan kredensial `superadmin` berikut:
-
-```
-username : superadmin
-email    : superadmin@admin.com
-password : superadmin
-```
-
-## Contributing
-
-Kami menerima kontribusi dari komunitas terbuka untuk meningkatkan aplikasi ini. Jika Anda menemukan masalah, bug, atau memiliki saran untuk peningkatan, silakan buat issue baru dalam repositori ini atau ajukan pull request.
 
 ## Donasi
 
 [![Donate paypal](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://paypal.me/xannxett?country.x=ID&locale.x=en_US)
 [![Donate saweria](https://img.shields.io/badge/Donate-Saweria-red?style=for-the-badge&link=https%3A%2F%2Fsaweria.co%2Fxiboxann)](https://saweria.co/xiboxann)
 
-## Lisensi
-
-[![GitHub license](https://img.shields.io/github/license/ikhsan3adi/sistem-perpustakaan-qr-code?style=for-the-badge)](https://github.com/ikhsan3adi/sistem-perpustakaan-qr-code/raw/main/LICENSE)
 
 ## Authors
 
