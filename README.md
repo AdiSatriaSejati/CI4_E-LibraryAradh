@@ -40,7 +40,7 @@
     ```
 2. Masuk ke direktori proyek:
     ```bash
-    cd I4_E-LibraryAradh
+    cd CI4_E-LibraryAradh
     ```
 3. Instal dependencies menggunakan Composer:
     ```bash
@@ -82,7 +82,7 @@
       12345678
       ```
       
-# in rupiah
+# Denda di file .env
 amountFinesPerDay = 1000
 
 ## Donasi
