@@ -1,4 +1,4 @@
-<p align="center"><a href="https://codeigniter.com/" target="_blank"><img src="https://ik.imagekit.io/AdiSatriaSejati/CI4.png?updatedAt=1702624913290" width="400" alt="CodeIgniter Logo"></a></p>
+![image](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/assets/117582840/4a9e0882-d88a-465d-9033-00bcfa2bc3a8)![image](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/assets/117582840/d8ad61a8-2be1-4325-be2e-5a3c436677cd)![image](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/assets/117582840/f3ba1866-db65-4ab3-928a-f3e28057b0b0)![image](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/assets/117582840/d7691e5b-56ba-472e-9446-bbe80768a4f7)<p align="center"><a href="https://codeigniter.com/" target="_blank"><img src="https://ik.imagekit.io/AdiSatriaSejati/CI4.png?updatedAt=1702624913290" width="400" alt="CodeIgniter Logo"></a></p>
 
 # E-LibraryAradh
 
@@ -181,4 +181,11 @@ amountFinesPerDay = 1000
 
 ## Authors
 
-- [@AdiSatriaSejati](https://github.com/AdiSatriaSejati)
+|kelompok 2                                                                                      | NIM      | NAMA                 | E-Mail             |
+-------------------------------------------------------------------------------------------------| -------- | -------------------- | ------------------ |
+![Alt](https://em-content.zobj.net/source/microsoft-teams/337/man-student_1f468-200d-1f393.png)  | 12221455 | Adi Satria Sejati    | 12221455@bsi.ac.id |
+![Alt](https://em-content.zobj.net/source/microsoft-teams/337/woman-student_1f469-200d-1f393.png)| 12220510 | Annisa Rahma Pyarry  | 12220510@bsi.ac.id |
+![Alt](https://em-content.zobj.net/source/microsoft-teams/337/man-student_1f468-200d-1f393.png)  | 12221446 | Dani Saputra         | 12221446@bsi.ac.id |
+![Alt](https://em-content.zobj.net/source/microsoft-teams/337/man-student_1f468-200d-1f393.png)  | 12220035 | Heri Setiawan        | 12220035@bsi.ac.id |
+![Alt](https://em-content.zobj.net/source/microsoft-teams/337/man-student_1f468-200d-1f393.png)  | 12220098 | Ryan Ramadhan        | 12220098@bsi.ac.id |
+
