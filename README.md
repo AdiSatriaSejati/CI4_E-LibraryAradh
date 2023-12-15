@@ -1,10 +1,10 @@
-<p align="center"><a href="https://codeigniter.com/" target="_blank"><img src="https://ik.imagekit.io/AdiSatriaSejati/CI4.jpg?updatedAt=1702622534762" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://codeigniter.com/" target="_blank"><img src="https://ik.imagekit.io/AdiSatriaSejati/CI4.png?updatedAt=1702623488637" width="400" alt="CodeIgniter Logo"></a></p>
 
 # E-LibraryAradh
 
 [![PHP Composer](https://github.com/ikhsan3adi/sistem-perpustakaan-qr-code/actions/workflows/php.yml/badge.svg)](https://github.com/ikhsan3adi/sistem-perpustakaan-qr-code/actions/workflows/php.yml)
 
-![Preview](https://ik.imagekit.io/AdiSatriaSejati/Home.gif?updatedAt=1702621796473)
+![Preview](https://ik.imagekit.io/AdiSatriaSejati/Home.png?updatedAt=1702621796473)
 
 ## Fitur
 
