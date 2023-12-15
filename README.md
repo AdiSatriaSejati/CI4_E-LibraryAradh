@@ -182,9 +182,3 @@ amountFinesPerDay = 1000
 ## Authors
 
 - [@AdiSatriaSejati](https://github.com/AdiSatriaSejati)
-
-
-
-## Authors
-
-- [@AdiSatriaSejati](https://github.com/AdiSatriaSejati)
