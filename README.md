@@ -4,6 +4,9 @@
 
 ![Preview](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/raw/main/screenshots/Home.gif)
 
+# Dashboard
+![ScreenShot's](https://ik.imagekit.io/AdiSatriaSejati/Dashboard.png?updatedAt=1702629574639)
+
 ## Fitur
 
 - Login, Register & Magic login link (via Email)
