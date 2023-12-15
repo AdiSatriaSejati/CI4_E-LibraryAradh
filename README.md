@@ -55,7 +55,7 @@
     ```
 5. Buat Database di http://localhost/phpmyadmin/
    ```bash
-   E-LibraryXpert
+   E-LibraryAradh
    ```
 6. Menjalankan Migrasi Database:
     ```bash
