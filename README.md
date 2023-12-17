@@ -7,6 +7,8 @@
 # Dashboard
 ![ScreenShot's](https://ik.imagekit.io/AdiSatriaSejati/Dashboard.png?updatedAt=1702629574639)
 
+# Use Case Diagram
+![Image](https://github.com/AdiSatriaSejati/CI4_E-LibraryAradh/raw/main/screenshots/UseCaseDiagram.drawio.png)
 ## Fitur
 
 - Login, Register & Magic login link (via Email)
