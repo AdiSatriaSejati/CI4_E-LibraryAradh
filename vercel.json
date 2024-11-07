@@ -1,14 +1,14 @@
 {
-  "builds": [
-    { 
-        "src": "index.php", 
+    "builds": [
+      { 
+        "src": "public/index.php", 
         "use": "@vercel/php" 
-    }
-  ],
-  "routes": [
-    { 
+      }
+    ],
+    "routes": [
+      { 
         "src": "/(.*)", 
-        "dest": "/index.php" 
-    }
-  ]
-}
+        "dest": "/public/index.php" 
+      }
+    ]
+  }
